@@ -26,4 +26,26 @@ document.addEventListener('DOMContentLoaded', function() {
         li.textContent = `${skill.name} (${skill.level})`;
         skillsList.appendChild(li);
     });
+
+    // 添加新技能的逻辑
+    document.getElementById('add-skill-button').addEventListener('click', function() {
+        const skillNameInput = document.getElementById('skill-name');
+        const skillLevelSelect = document.getElementById('skill-level');
+
+        if (skillNameInput.value && skillLevelSelect.value) {
+            const newSkill = {
+                name: skillNameInput.value,
+                level: skillLevelSelect.value
+            };
+
+            // 创建一个新的列表项并添加到技能列表中
+            const li = document.createElement('li');
+            li.textContent = `${newSkill.name} (${newSkill.level})`;
+            skillsList.appendChild(li);
+
+            // 清空输入框
+            skillNameInput.value = '';
+            skillLevelSelect.selectedIndex = 0; // 选择默认选项
+        }
+    });
 });
