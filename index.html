@@ -1,11 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello World Example</title>
+    <title>角色展示</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Hello World</h1>
+    <div class="character-card">
+        <h2 class="name">角色名称</h2>
+        <p><strong>年龄:</strong> <span class="age"></span></p>
+        <p><strong>性别:</strong> <span class="gender"></span></p>
+        <p><strong>种族:</strong> <span class="race"></span></p>
+        <h3>六类属性</h3>
+        <ul class="attributes">
+            <li><strong>力量:</strong> <span class="strength"></span></li>
+            <li><strong>敏捷:</strong> <span class="dexterity"></span></li>
+            <li><strong>体质:</strong> <span class="constitution"></span></li>
+            <li><strong>智力:</strong> <span class="intelligence"></span></li>
+            <li><strong>感知:</strong> <span class="wisdom"></span></li>
+            <li><strong>魅力:</strong> <span class="charisma"></span></li>
+        </ul>
+        <h3>技能</h3>
+        <ul class="skills">
+            <!-- 技能项将通过JavaScript动态生成 -->
+        </ul>
+        <div class="description">
+            <h3>角色介绍</h3>
+            <p><span class="bio"></span></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
