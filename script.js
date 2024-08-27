@@ -6,10 +6,10 @@ document.addEventListener('DOMContentLoaded', function() {
         gender: "男",
         race: "汉",
         skills: [
-            { name: "剑术", level: "A" },
-            { name: "内功", level: "S" },
-            { name: "轻功", level: "B" },
-            { name: "医术", level: "SSS" }
+            { name: "九阳神功", level: "S" },
+            { name: "乾坤大挪移", level: "A+" },
+            { name: "太极拳", level: "A" },
+            { name: "轻功", level: "B+" }
         ]
     };
 
